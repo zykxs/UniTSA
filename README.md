@@ -1,2 +1,2 @@
 # UniTSA
-TSA Repo
+Repositório da UC de Tecnologias de Scripting e Automação
