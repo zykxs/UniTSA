@@ -14,17 +14,17 @@ echo
 while true; do
     read -p "Aluno (press q to quit):" student_name
 
-    if [ $student_name == q ]; then
+    if [ "$student_name" == "q" ]; then
         break
     fi
 
-    attendance+=("$student_name")
+    presencas+=("$student_name")
 done
 
 #Save array to output file
 echo Alunos presentes: > $output_file
 echo >> $output_file
-for student in ${attendance[@]}
+for student in "${presencas[@]}"
 do
     echo $student >> $output_file
 done
