@@ -1,6 +1,5 @@
-#!/bin/bash
-
 #./mkScript.sh
+#!/bin/bash
 
 # Check if filename is provided
 if [ -z "$1" ]; then
@@ -15,6 +14,6 @@ touch $1.sh
 chmod +x $1.sh
 
 #Set first lines in new script
+echo "#./$1.sh" >> $1.sh
 echo "#!/bin/bash" >> $1.sh
 echo >> $1.sh
-echo "#./$1.sh" >> $1.sh
