@@ -6,7 +6,6 @@ echo
 dir="${1:-.}"
 
 #Check if path exists.
-
 if [ ! -d "$dir" ]; then
   echo "Error: $dir is not a directory or does not exist."
   exit 1
